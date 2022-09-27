@@ -1,0 +1,117 @@
+/* ======================= */
+/* === Main Layout CSS === */
+/* ======================= */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.GridContainerMainBodyComAsdXcCgBxuLhJLEvUpBVPs091822{
+    
+    background-color: red;/*//TODO: TO BE DELETED*/
+    row-gap: 20px;/*//TODO: TO BE DELETED*/
+    column-gap: 20px;/*//TODO: TO BE DELETED*/   
+}
+.GridContainerMainItemsComVdcGZmsVJrSWuOpGiJIBon091822{
+    background-color: aqua; /*//TODO: TO BE DELETED*/
+}
+
+/* ============================= */
+/* == Mobile (600px and down) == */
+/* ============================= */
+
+/* Grid item arrangement */
+.GridContainerMainBodyComAsdXcCgBxuLhJLEvUpBVPs091822{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+.HeaderComDacDGZkBnVJOEnjalbKjqa091822{
+    grid-column: 1 / span 3;
+}
+.AppListComoevdcqPpUoyZqVGsFPJbCh091822{
+    grid-column: 1 / span 3;
+}
+.HeaderAdsTopComYPBOhpTlAHiScVZjFsfMMF091822{
+    grid-column: 1 / span 3;
+}
+.AppMenuLeftSideComCqkdWHaXgcUSJPVYtBmPZh091822{
+    position: absolute; /*Relative to  */
+    display: none; /*Hide App Menu bar*/
+}
+.MainBodyComBOcCsmJdnAokuTftLgmzbN091822{
+    grid-column: 1 / span 2;
+}
+.FooterAdsBottomComOfWmOboYEHZffyzkaexmdT091822{
+    grid-column: 1 / span 3;
+}
+.FooterCombaRWpeyPwBbGJUFDbxqMTd091822{
+    grid-column: 1 / span 3;
+}
+
+/* ==================== */
+/* --- Header items --- */
+/* ==================== */
+
+/* Header Item arrangement */
+.HeaderItemsComSsELTqanOKGFEgjTmcMslw091822{
+    display: grid;
+    grid-template-columns: max-content 2fr min-content min-content ;
+    column-gap: 3px;
+    background-color: #303134;
+    color: white;
+    align-items: center;
+    padding: 2px 3px;
+}
+
+.ActiveAppMenuComIxhVAijCKYxNaFXDSRprLF091822{
+    grid-column: 1 / span 1;
+    display: flex;
+    align-items: center;
+}
+.ActiveAppLogoComcilnMbxCvxlfgdBCwSiADc091822{
+    height: 15px;
+    width: 15px;
+    padding-left: 5px;
+    box-sizing: content-box;
+}
+.MenuCompNjBwEQejCaIDiHgxjsmaq091822{
+    width: 15px;
+    height: 10px;
+}
+.HeaderCompanyLogoComqaQMvgdurHKosNtHpoAMoH091822{
+    grid-column: 2 / span 1;
+    height: 15px;
+    place-self: center;
+}
+.AppLauncherCombmeubqDoEPgeRvPKmkqnlg091822{
+    grid-column: 3 / span 1;
+    justify-self: center;
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+.UserIconComXiymepoyMqXRvSXeSLqYZH091822{
+    grid-column: 4 / span 1;
+    width: 13px;
+    height: 13px;
+    justify-self: right;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
