@@ -50,51 +50,55 @@
 }
 
 /* ==================== */
+/* ----- Variable ----- */
+/* ==================== */
+:root{
+    --width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822: 2rem;
+    --height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822: 2rem;
+}
+
+/* ==================== */
 /* --- Header items --- */
 /* ==================== */
 
 /* Header Item arrangement */
 .HeaderItemsComSsELTqanOKGFEgjTmcMslw091822{
     display: grid;
-    grid-template-columns: max-content 2fr min-content min-content ;
-    column-gap: 3px;
+    grid-template-columns: min-content min-content 1fr min-content min-content ;
+    column-gap: 10px;
     background-color: #303134;
     color: white;
     align-items: center;
-    padding: 2px 3px;
+    padding: 6px 10px 6px 5px;
 }
 
-.ActiveAppMenuComIxhVAijCKYxNaFXDSRprLF091822{
+.MenuCompNjBwEQejCaIDiHgxjsmaq091822{
     grid-column: 1 / span 1;
-    display: flex;
-    align-items: center;
+    width: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
+    height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
+    padding: 0.3rem;
 }
 .ActiveAppLogoComcilnMbxCvxlfgdBCwSiADc091822{
-    height: 15px;
-    width: 15px;
-    padding-left: 5px;
-    box-sizing: content-box;
-}
-.MenuCompNjBwEQejCaIDiHgxjsmaq091822{
-    width: 15px;
-    height: 10px;
+    grid-column: 2 / span 1;
+    width: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
+    height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
 }
 .HeaderCompanyLogoComqaQMvgdurHKosNtHpoAMoH091822{
-    grid-column: 2 / span 1;
-    height: 15px;
+    grid-column: 3 / span 1;
+    height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
     place-self: center;
 }
 .AppLauncherCombmeubqDoEPgeRvPKmkqnlg091822{
-    grid-column: 3 / span 1;
+    grid-column: 4 / span 1;
     justify-self: center;
-    width: 15px;
-    height: 15px;
+    width: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
+    height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
     padding-right: 5px;
 }
 .UserIconComXiymepoyMqXRvSXeSLqYZH091822{
-    grid-column: 4 / span 1;
-    width: 33px;
-    height: 33px;
+    grid-column: 5 / span 1;
+    width: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
+    height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
     justify-self: right;
 }
 
