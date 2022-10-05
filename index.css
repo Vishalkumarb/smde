@@ -8,7 +8,7 @@
 }
 .GridContainerMainBodyComAsdXcCgBxuLhJLEvUpBVPs091822{
     
-    background-color: red;/*//TODO: TO BE DELETED*/
+    background-color: red; /*//TODO: TO BE DELETED*/
     row-gap: 20px;/*//TODO: TO BE DELETED*/
     column-gap: 20px;/*//TODO: TO BE DELETED*/   
 }
@@ -20,7 +20,7 @@
 /* == Mobile (600px and down) == */
 /* ============================= */
 
-/* Grid item arrangement */
+/* Body Grid item arrangement */
 .GridContainerMainBodyComAsdXcCgBxuLhJLEvUpBVPs091822{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,7 +37,10 @@
 }
 .AppMenuLeftSideComCqkdWHaXgcUSJPVYtBmPZh091822{
     position: absolute; /*Relative to  */
-    display: none; /*Hide App Menu bar*/
+    top:calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822) + 0.75rem);
+    background-color: #36383b;
+    /* display: none;  */
+    /*Hide App Menu bar, for unhiding display:block, try grid also*/
 }
 .MainBodyComBOcCsmJdnAokuTftLgmzbN091822{
     grid-column: 1 / span 2;
@@ -49,34 +52,37 @@
     grid-column: 1 / span 3;
 }
 
-/* ==================== */
-/* ----- Variable ----- */
-/* ==================== */
-:root{
-    --width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822: 2rem;
-    --height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822: 2rem;
-}
+
 
 /* ==================== */
 /* --- Header items --- */
 /* ==================== */
 
-/* Header Item arrangement */
+
+/* Variable */
+:root{
+    --width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822: 2rem;
+    --height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
+    --color-HovericonCommOOjkOtyIrnknqFeXjUDeJ091822: blue;
+    --Widthdivider-MenuListIconComTJNyyKmdpdwpeUMXRksfam091822:1.5;
+}
+
+/* Header Grid Item arrangement */
 .HeaderItemsComSsELTqanOKGFEgjTmcMslw091822{
     display: grid;
-    grid-template-columns: min-content min-content 1fr min-content min-content ;
-    column-gap: 10px;
+    grid-template-columns: calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822) + 0.5rem) calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822) + 0.5rem) 1fr calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822) + 0.5rem) calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822) + 0.5rem);
     background-color: #303134;
     color: white;
     align-items: center;
-    padding: 6px 10px 6px 5px;
+    justify-items: center;
+    height:calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822) + 0.75rem);   
 }
-
 .MenuCompNjBwEQejCaIDiHgxjsmaq091822{
     grid-column: 1 / span 1;
+    justify-self: left;
     width: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
     height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
-    padding: 0.3rem;
+    margin-left: 2px;
 }
 .ActiveAppLogoComcilnMbxCvxlfgdBCwSiADc091822{
     grid-column: 2 / span 1;
@@ -93,14 +99,75 @@
     justify-self: center;
     width: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
     height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
-    padding-right: 5px;
+    padding: 0.3rem;
 }
 .UserIconComXiymepoyMqXRvSXeSLqYZH091822{
     grid-column: 5 / span 1;
     width: var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822);
     height: var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822);
-    justify-self: right;
+    margin-right: 5px;
 }
+
+/* Header Item Hover effect */
+.MenuCompNjBwEQejCaIDiHgxjsmaq091822:hover{
+    color: var(--color-HovericonCommOOjkOtyIrnknqFeXjUDeJ091822);
+    cursor: pointer;
+    width: calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822) + 0.3rem);
+    height: calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822) + 0.3rem);   
+}
+.ActiveAppLogoComcilnMbxCvxlfgdBCwSiADc091822:hover{
+    cursor: pointer;
+    height: calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822) + 0.3rem);
+    width: auto;   
+}
+.AppLauncherCombmeubqDoEPgeRvPKmkqnlg091822:hover{
+    color: var(--color-HovericonCommOOjkOtyIrnknqFeXjUDeJ091822);
+    cursor: pointer;
+    width: calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822) + 0.3rem);
+    height: calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822) + 0.3rem);   
+}
+.UserIconComXiymepoyMqXRvSXeSLqYZH091822:hover{
+    color: var(--color-HovericonCommOOjkOtyIrnknqFeXjUDeJ091822);
+    cursor: pointer;
+    width: calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822) + 0.3rem);
+    height: calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822) + 0.3rem);   
+}
+
+/* Header Grid Item arrangement */
+.MenuItemListComYtjBdUzwyOIYISCXSPnrFi091822{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    
+}
+.MenuItemIconComZaOpJlVrHnVEUvibbgcUeE091822{
+    list-style-type: none;
+    border-left: 3px solid #abc3e0;
+}
+.UserCompanySmallLogoComffZmwjyzMlqfReBejmXqmE091822, .ExpandMenuComIxhVAijCKYxNaFXDSRprLF091822, .SequeezeMenuComysjzyNAhHZXpwOzRcwSYcl091822, .CustomercompanyComlTfZTISOiIZTtQCZsfYNzO091822, .ContactPersonComXEYziENEXxHWPqjyJeQnlF091822, .ToDOListCompKXfboLXjwKNkCdkAhTEAp091822,.SalesDocumentComDiDBjmhkhlqFVesnyZBznX091822,.PaymentsComSPgEFXOcfIojAdvibtxYsP091822, .SettingComlYiWSXGcpqDyUWQtWESkXt091822{
+    width: calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822)/var(--Widthdivider-MenuListIconComTJNyyKmdpdwpeUMXRksfam091822));
+    height: auto;
+    fill: white;
+    color: white; 
+    margin: 7px 5px;    
+}
+.UserCompanyLargeLogoComSJEWIbVMntkTWdHEoNlMqx091822{
+    height: calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822)/var(--Widthdivider-MenuListIconComTJNyyKmdpdwpeUMXRksfam091822));
+    width: auto;
+}
+.MenuItemIconList03ComZaOpJlVrHnVEUvibbgcUeE091822, .MenuItemIconList04ComZaOpJlVrHnVEUvibbgcUeE091822, .UserCompanySmallLogoComffZmwjyzMlqfReBejmXqmE091822{
+    display: none;
+}
+
+
+
+
+
+    
+
+
+
+
 
 
 /* Extra small devices (phones, 600px and down) */
