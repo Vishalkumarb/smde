@@ -155,10 +155,25 @@
     height: calc(var(--height-HeaderIconComTyzAMHhjNbTtAQQIsCPykH091822)/var(--Widthdivider-MenuListIconComTJNyyKmdpdwpeUMXRksfam091822));
     width: auto;
 }
-.MenuItemIconList03ComZaOpJlVrHnVEUvibbgcUeE091822, .MenuItemIconList04ComZaOpJlVrHnVEUvibbgcUeE091822, .UserCompanySmallLogoComffZmwjyzMlqfReBejmXqmE091822{
+.MenuItemIcon01ExpandMenuComIxhVAijCKYxNaFXDSRprLF091822, .MenuItemIcon03UserCompanyLargeLogoComSJEWIbVMntkTWdHEoNlMqx091822, .MenuItemIcon04SequeezeMenuComysjzyNAhHZXpwOzRcwSYcl091822{
     display: none;
 }
+.DashboardComTJNyyKmdpdwpeUMXRksfam091822{
+    width: calc(var(--width-HeaderIconComhbmwElbqxPVIgYIPcFaIgT091822)/var(--Widthdivider-MenuListIconComTJNyyKmdpdwpeUMXRksfam091822));
+    height: auto;
+    margin: 7px 5px;
+}
 
+.MenuItemIcon01ExpandMenuComIxhVAijCKYxNaFXDSRprLF091822{}
+.MenuItemIcon02UserCompanySmallLogoComffZmwjyzMlqfReBejmXqmE091822{}
+.MenuItemIcon03UserCompanyLargeLogoComSJEWIbVMntkTWdHEoNlMqx091822{}
+.MenuItemIcon04SequeezeMenuComysjzyNAhHZXpwOzRcwSYcl091822{}
+.MenuItemIcon05CustomercompanyComlTfZTISOiIZTtQCZsfYNzO091822{}
+.MenuItemIcon06ContactPersonComXEYziENEXxHWPqjyJeQnlF091822{} 
+.MenuItemIcon07ToDOListCompKXfboLXjwKNkCdkAhTEAp091822{}
+.MenuItemIcon08SalesDocumentComDiDBjmhkhlqFVesnyZBznX091822{} 
+.MenuItemIcon09PaymentsComSPgEFXOcfIojAdvibtxYsP091822{}
+.MenuItemIcon10SettingComlYiWSXGcpqDyUWQtWESkXt091822{}
 
 
 
